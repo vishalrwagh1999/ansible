@@ -118,7 +118,7 @@ Part 7 copy the generated ssh keys from ansible_master to target machine and che
 
 Step 15 Copy the generated key from ansible_master to remote target 
 
-ssh-copy-id root@172.17.0.3
+ssh-copy-id root@172.17.0.3          /root/.ssh/authorized_keys
 yes
 
 
