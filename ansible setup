@@ -137,10 +137,17 @@ Part 8 Now create a ansible playbook  and run  ansible-playbook
 Step 17 :- create a installnginx.yaml file in 
 cd /etc/ansible
 vi  installnginx.yaml
+-------------------------------
+root@223d515cd824:/etc/ansible# echo "---
+- hosts: all
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes" > playbook2.yml
 
-
-
-
+-----------------------------------------
 ---
 - hosts: all
   tasks:
