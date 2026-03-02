@@ -153,3 +153,42 @@ root@223d515cd824:/etc/ansible# echo "---
   tasks:
     - name: ensure nginx is at the latest version
       apt: name=nginx state=latest
+
+=================================
+root@ip-172-31-30-238:~# history 
+    1  ls -lth
+    2  ls -ltrh
+    3  apt update
+    4  apt install docker
+    5  apt install docker.io
+    6  docker run -itd --name master-ansible ubuntu /bin/bash
+    7  docker ps
+    8  docker sp -a
+    9  docker ps -a
+   10  docker images
+   11  docker run -itd --name target1 ubuntu /bin/bash
+   12  docker images
+   13  docker sp -a
+   14  docker ps 
+   15  ls -ltrh
+   16  docker exec -it master-ansible bash
+   17  docker ps 
+   18  docker exec -it target1 bash
+   19  docker exec -it target1 /bin/bash
+   20  docker inspect target1 
+   21  docker exec -it master-ansible bash
+   22  docker exec -it target1 /bin/bash
+   23  docker exec -it master-ansible bash
+   24  docker exec -it target1 /bin/bash
+   25  docker exec -it master-ansible bash
+   26  docker ps
+   27  docker stop target1 
+   28  docker ps
+   29  docker ps -a
+   30  docker commit target1 nginx-target1
+   31  docker images
+   32  docker run -it -d --name nginx-target1 -p 80:80 nginx-target1
+   33  docker ps
+   34  docker exec nginx-target1 service nginx start
+   35  curl http://checkip.amazonaws.com
+   36  history 
